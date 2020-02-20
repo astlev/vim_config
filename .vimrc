@@ -56,15 +56,14 @@ vnoremap <tab> %
 set background=dark
 colorscheme vimBoxColorsDuringLoad
 set guifont=JetBrains\ Mono:h18
-set linespace=3
 
 "TURN ON NUMBERS OF LINE:
 set number
 set relativenumber
 
 "SET WINDOW SIZE:
-set lines=35
-"set columns=130
+set lines=30
+set columns=100
 
 "TURN ON AUTODEFINE SYNTAX OF FILE:
 syntax on
@@ -75,8 +74,8 @@ filetype plugin on
 
 "ELEMENTS OF GRAPHIC INTERFACE:
 set guioptions-=T
-set guioptions+=b
-set guioptions-=m
+set guioptions-=b
+"set guioptions-=m
 
 "SHOW CURSOR POSITION IN CORNER OF WINDOW:
 set ruler
@@ -84,7 +83,7 @@ set ruler
 "AUTOINDENT:
 set ai
 
-"set expandtab
+set expandtab
 
 "WIDTH OF TAB:
 set tabstop=4
