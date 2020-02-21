@@ -62,8 +62,8 @@ set number
 set relativenumber
 
 "SET WINDOW SIZE:
-set lines=30
-set columns=100
+set lines=33
+set columns=110
 
 "TURN ON AUTODEFINE SYNTAX OF FILE:
 syntax on
@@ -75,7 +75,8 @@ filetype plugin on
 "ELEMENTS OF GRAPHIC INTERFACE:
 set guioptions-=T
 set guioptions-=b
-"set guioptions-=m
+set guioptions-=m
+set guioptions-=r
 
 "SHOW CURSOR POSITION IN CORNER OF WINDOW:
 set ruler
@@ -118,7 +119,7 @@ set wrapmargin=5
 set listchars=tab:<-,trail:·
 set list
 
-set scrolloff=3
+set scrolloff=7
 
 set foldmethod=manual
 set foldcolumn=3
