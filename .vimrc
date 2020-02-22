@@ -123,11 +123,14 @@ set scrolloff=7
 
 set foldmethod=manual
 set foldcolumn=3
+
+" SHOW STATUSLINE:
+set laststatus=2
+
 ""
 """set statusline=%t\ %y%m%r[%{&fileencoding}]%<[%{strftime(\"%d.%m.%y\",getftime(expand(\"%:p\")))}]%k%=%-14.(%l,%c%V%)\ %P
 """set statusline=%F%m%r%h%w%=[fileenc=%{&fileencoding},enc=%{&encoding}\]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 ""set statusline=%<%f%h%m%r%=[%{&fileencodings}]\ %{&encoding}\ %l,%c%V\ %p%%\ %L
-set laststatus=2
 ""set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 ""
 """set cursorline
