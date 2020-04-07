@@ -1,6 +1,10 @@
 " DISABLE COMPABILITY WITH OLDER VERSIONS AND STANDART COPY PASTE:
 set nocompatible
 
+" OPEN NEW TAB AND SEARCH FILE:
+map <C-t> :tabnew<CR><C-p>
+
+
 nnoremap ; :
 
 vnoremap x "+x
@@ -50,6 +54,13 @@ vnoremap <tab> %
 
 "autocmd FileType go nmap <leader>b  <Plug>(go-build)
 "autocmd FileType go nmap <leader>r  <Plug>(go-run)
+
+" CTRLP FUZZY SEARCH PLUGIN SETTINGS:
+map <Ctrl-p> :tabnew<Ctrl-p>
+
+set wildignore+=*/tmp/*,*/bin/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*\\tmp\\*,*\\bin\\*,*.swp,*.zip,*.exe  " Windows
+" CTRLP SETTINGS END
 
 "COLOR SCHEME:
 "colorscheme zellner
