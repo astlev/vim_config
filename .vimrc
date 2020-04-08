@@ -4,7 +4,6 @@ set nocompatible
 " OPEN NEW TAB AND SEARCH FILE:
 map <C-t> :tabnew<CR><C-p>
 
-
 nnoremap ; :
 
 vnoremap x "+x
@@ -56,11 +55,23 @@ vnoremap <tab> %
 "autocmd FileType go nmap <leader>r  <Plug>(go-run)
 
 " CTRLP FUZZY SEARCH PLUGIN SETTINGS:
-map <Ctrl-p> :tabnew<Ctrl-p>
-
 set wildignore+=*/tmp/*,*/bin/*,*.so,*.swp,*.zip     " MacOSX/Linux
 set wildignore+=*\\tmp\\*,*\\bin\\*,*.swp,*.zip,*.exe  " Windows
 " CTRLP SETTINGS END
+
+" NETRW SETTINGS:
+" disable folder information:
+let g:netrw_banner = 0
+" list files as tree
+let g:netrw_liststyle = 3
+" open file in previous window (in buffer?)
+let g:netrw_browse_split = 4
+" show split on the left?
+let g:netrw_altv = 1
+" size of netrw split
+let g:netrw_winsize = 25
+map <M-1> :Vexplore<CR>
+" NETRW SETTINGS END
 
 "COLOR SCHEME:
 "colorscheme zellner
