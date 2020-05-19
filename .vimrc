@@ -4,9 +4,6 @@ set nocompatible
 " OPEN NEW TAB AND SEARCH FILE:
 map <C-t> :tabnew<CR><C-p>
 
-" OPEN EACH FILE IN NEW TAB
-:au BufAdd,BufNewFile * nested tab sball
-
 nnoremap ; :
 
 vnoremap x "+x
